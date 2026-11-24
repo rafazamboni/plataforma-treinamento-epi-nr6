@@ -1,0 +1,9 @@
+app/
+.env
+*.log
+treinamentos/uploads/*
+!treinamentos/uploads/capas/
+treinamentos/uploads/capas/*
+!treinamentos/uploads/capas/.htaccess
+.DS_Store
+Thumbs.db

@@ -1,0 +1,100 @@
+
+.trq-destaque{
+  background:var(--tr-bg-suave);border:1px solid var(--tr-borda);
+  border-radius:10px;padding:13px 15px;
+}
+.trq-destaque b{font-size:14px}
+
+.trq-contador{
+  border:1px solid var(--tr-borda);border-radius:9px;padding:9px 13px;
+  font-size:13px;color:var(--tr-txt-dim);background:#fff;
+}
+.trq-contador b{font-size:17px;color:var(--tr-navy);margin-right:4px}
+.trq-contador small{display:block;font-size:11.5px;color:#b45309;margin-top:2px}
+
+.trq-lista{display:flex;flex-direction:column;gap:12px}
+
+.trq-card{
+  background:#fff;border:1px solid var(--tr-borda);border-radius:var(--tr-radius);
+  padding:15px 17px 13px;
+}
+.trq-card.is-inativa{opacity:.6;background:#fbfcfe}
+.trq-card.is-incompleta{border-color:#f0d9b8}
+
+.trq-card-topo{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-bottom:9px}
+.trq-ordem{
+  width:25px;height:25px;flex:0 0 25px;border-radius:50%;
+  background:var(--tr-navy);color:#fff;font-size:12.5px;font-weight:700;
+  display:inline-flex;align-items:center;justify-content:center;
+}
+.trq-tipo{font-size:11.5px;color:var(--tr-txt-dim);text-transform:uppercase;letter-spacing:.05em;font-weight:600}
+.trq-peso{
+  font-size:11px;font-weight:600;color:var(--tr-acento);
+  border:1px solid #cfe6ea;background:#f0f9fa;border-radius:999px;padding:2px 9px;
+}
+.trq-flag{
+  font-size:11px;font-weight:600;color:var(--tr-txt-dim);
+  background:var(--tr-bg-suave);border:1px solid var(--tr-borda);
+  border-radius:999px;padding:2px 9px;
+}
+.trq-flag.is-erro{color:#8a5a15;background:#fffaf2;border-color:#f0d9b8}
+
+.trq-acoes{display:flex;gap:4px;margin-left:auto}
+
+.trq-enunciado{margin:0 0 10px;font-size:14.5px;line-height:1.6;color:var(--tr-txt);font-weight:500}
+
+.trq-alts{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:5px}
+.trq-alts li{
+  display:flex;gap:9px;align-items:flex-start;
+  font-size:13.5px;line-height:1.55;color:var(--tr-txt-dim);
+}
+.trq-alts i{font-size:13px;margin-top:3px;color:#c3ccd8}
+.trq-alts li.is-correta{color:var(--tr-ok);font-weight:500}
+.trq-alts li.is-correta i{color:var(--tr-ok)}
+
+.trq-explicacao{
+  margin:11px 0 0;padding-top:9px;border-top:1px dashed var(--tr-borda);
+  font-size:12.5px;line-height:1.6;color:var(--tr-txt-dim);
+}
+.trq-explicacao i{color:#c99a2e;margin-right:4px}
+
+.trq-estat{
+  display:flex;align-items:center;flex-wrap:wrap;gap:6px 14px;
+  margin:11px 0 0;padding-top:9px;border-top:1px dashed var(--tr-borda);
+  font-size:12.5px;color:var(--tr-txt-dim);
+}
+.trq-estat b{color:var(--tr-txt);font-variant-numeric:tabular-nums}
+.trq-estat i.bi{margin-right:3px}
+.trq-estat-item.is-acerto i.bi{color:var(--tr-ok)}
+.trq-estat-item.is-erro i.bi{color:var(--tr-perigo)}
+.trq-estat-vazio{font-style:italic}
+.trq-nivel{
+  font-size:11px;font-weight:600;border-radius:999px;padding:2px 9px;border:1px solid var(--tr-borda);
+  background:var(--tr-bg-suave);color:var(--tr-txt-dim);
+}
+.trq-nivel.is-facil{color:var(--tr-ok);background:#effaf5;border-color:#c5e8d9}
+.trq-nivel.is-medio{color:#8a5a15;background:#fffaf2;border-color:#f0d9b8}
+.trq-nivel.is-dificil{color:var(--tr-perigo);background:#fdf1f0;border-color:#f0d3d1}
+.trq-estat-barra{
+  flex:1 1 90px;max-width:160px;height:6px;border-radius:99px;overflow:hidden;
+  background:#f0d3d1;
+}
+.trq-estat-barra i{display:block;height:100%;background:var(--tr-ok)}
+
+.trq-form{display:grid;gap:16px;grid-template-columns:repeat(2,minmax(0,1fr))}
+
+.trq-alts-editor{display:flex;flex-direction:column;gap:7px;margin-bottom:8px}
+.trq-alt-linha{display:flex;align-items:center;gap:9px}
+.trq-alt-marca{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:34px;height:34px;flex:0 0 34px;border-radius:9px;
+  border:1px solid var(--tr-borda);background:#fff;cursor:pointer;
+}
+.trq-alt-marca:has(input:checked){border-color:var(--tr-ok);background:#effaf4}
+.trq-alt-marca input{width:16px;height:16px;accent-color:var(--tr-ok);cursor:pointer}
+.trq-alt-texto{flex:1}
+.trq-add{align-self:flex-start}
+
+@media (max-width:820px){
+  .trq-form{grid-template-columns:1fr}
+}
